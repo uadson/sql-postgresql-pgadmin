@@ -42,3 +42,9 @@ values (14,'Jeferson',null,null,'1983-07-01','M',null,'Brasileiro',null,null, nu
 
 insert into cliente(idcliente, nome, cpf, rg, data_nascimento, genero, profissao, nacionalidade, logradouro, numero, complemento, bairro, municipio, UF)
 values (15,'Jessica',null,null,null,'F','Estudante', null, null, null, null, null, 'União da Vitória','PR');
+
+insert into profissao (idprofissao, nome) values (1,'Estudante');
+insert into profissao (idprofissao, nome) values (2,'Engenheiro');
+insert into profissao (idprofissao, nome) values (3,'Pedreiro');
+insert into profissao (idprofissao, nome) values (4,'Jornalista');
+insert into profissao (idprofissao, nome) values (5,'Professor');
