@@ -25,3 +25,27 @@ create table profissao (
 	constraint pk_prf_idprofissao primary key (idprofissao),
 	constraint un_prf_nome unique (nome)
 );
+
+create table nacionalidade (
+	idnacionalidade integer not null,
+	nome varchar (30) not null,
+
+	constraint pk_ncn_idnacionalidade primary key (idnacionalidade),
+	constraint un_ncn_nome unique (nome)
+);
+
+create table complemento (
+	idcomplemento integer not null,
+	nome varchar (30),
+
+	constraint pk_cpl_idcomplemento primary key (idcomplemento),
+	constraint un_cpl_nome unique(nome)
+);
+
+create table bairro (
+	idbairro integer not null,
+	nome varchar (30) not null,
+
+	constraint pk_brr_idbairro primary key (idbairro),
+	constraint un_brr_nome unique (nome)
+);

@@ -48,3 +48,16 @@ insert into profissao (idprofissao, nome) values (2,'Engenheiro');
 insert into profissao (idprofissao, nome) values (3,'Pedreiro');
 insert into profissao (idprofissao, nome) values (4,'Jornalista');
 insert into profissao (idprofissao, nome) values (5,'Professor');
+
+insert into nacionalidade (idnacionalidade, nome) values (1, 'Brasileira');
+insert into nacionalidade (idnacionalidade, nome) values (2, 'Italiana');
+insert into nacionalidade (idnacionalidade, nome) values (3, 'Norte-americana');
+insert into nacionalidade (idnacionalidade, nome) values (4, 'Alemã');
+
+insert into complemento (idcomplemento, nome) values (1, 'Casa');
+insert into complemento (idcomplemento, nome) values (2, 'Apartamento');
+
+insert into bairro (idbairro, nome) values (1, 'Cidade Nova');
+insert into bairro (idbairro, nome) values (2, 'Centro');
+insert into bairro (idbairro, nome) values (3, 'São Pedro');
+insert into bairro (idbairro, nome) values (4, 'Santa Rosa');
