@@ -10,7 +10,7 @@ services:
       - ./config/.env.db
     restart: always
     ports:
-      - "5433:5432"
+      - "5440:5432"
     networks:
       sql_net:
         ipv4_address: 180.18.1.2
@@ -22,7 +22,7 @@ services:
       - PGADMIN_DEFAULT_EMAIL=db@db.com
       - PGADMIN_DEFAULT_PASSWORD=dbdb
     ports:
-      - "5050:80"
+      - "5059:80"
     depends_on:
       - db
     restart: always
