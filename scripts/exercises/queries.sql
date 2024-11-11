@@ -25,7 +25,7 @@ select * from pedido where idvendedor = 5 or idvendedor = 7;
 -- 13. Os clientes que moram em União da Vitória ou Porto União.
 select nome, idmunicipio from cliente where idmunicipio = 1 or idmunicipio = 3;
 -- 14. Os clientes que não moram em União da Vitória e nem em Porto União.
-select nome, idmunicipio from cliente where not idmunicipio = 1 or not idmunicipio = 3;
+select nome, idmunicipio from cliente where not idmunicipio = 1 or idmunicipio = 3;
 -- 15. Os clientes que não informaram o logradouro.
 
 -- 16. Os clientes que moram em avenidas.
