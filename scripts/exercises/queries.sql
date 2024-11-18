@@ -27,19 +27,20 @@ select nome, idmunicipio from cliente where idmunicipio = 1 or idmunicipio = 3;
 -- 14. Os clientes que não moram em União da Vitória e nem em Porto União.
 select nome, idmunicipio from cliente where not idmunicipio = 1 or idmunicipio = 3;
 -- 15. Os clientes que não informaram o logradouro.
-
+select nome, logradouro from cliente where logradouro is null;
 -- 16. Os clientes que moram em avenidas.
-
+select nome, logradouro from cliente where logradouro like 'Av%';
 -- 17. Os vendedores que o nome começa com a letra S.
-
+select nome from vendedor where nome like 'S%';
 -- 18. Os vendedores que o nome termina com a letra A.
-
+select nome from vendedor where nome like '%a';
 -- 19. Os vendedores que o nome não começa com a letra A.
-
+select nome from vendedor where nome not like 'A%';
 -- 20. Os municípios que começam com a letra P e são de Santa Catarina.
-
+select nome from municipio where nome like 'P%' and iduf = 1;
 -- 21. As transportadoras que informaram o endereço.
-
+select * from transportadora where logradouro is not null;
 -- 22. Os itens do pedido 01.
-
+select * from pedido_produto where idpedido = 1;
 -- 23. Os itens do pedido 06 ou do pedido 10.
+select * from pedido_produto where idpedido = 6 or idpedido = 10;
