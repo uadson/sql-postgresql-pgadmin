@@ -15,8 +15,14 @@ select
 	valor as "Valor de vendas"
 	from pedido
 	where valor > 1500;
--- 3. O somatório das vendas de cada vendedor.
 
+-- 3. O somatório das vendas de cada vendedor.
+select idvendedor as "Código do Vendedor", 
+	sum(valor) as "Total Vendido"
+	from pedido
+	group by idvendedor
+	order by sum(valor) desc;
+    
 -- 4. A quantidade de municípios.
 
 -- 5. A quantidade de municípios que são do Paraná ou de Santa Catarina.
