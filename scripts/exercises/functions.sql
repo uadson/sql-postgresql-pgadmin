@@ -1,9 +1,20 @@
 -- Exercícios – funções agregadas
 
 -- 1. A média dos valores de vendas dos vendedores que venderam mais que R$ 200,00.
+select 
+	idvendedor as "Código do Vendedor", 
+	avg(valor) as "Média de Vendas"
+	from pedido
+	where valor > 200
+	group by idvendedor
+	order by avg(valor) desc;
 
 -- 2. Os vendedores que venderam mais que R$ 1500,00.
-
+select 
+	idvendedor as "Código do Vendedor", 
+	valor as "Valor de vendas"
+	from pedido
+	where valor > 1500;
 -- 3. O somatório das vendas de cada vendedor.
 
 -- 4. A quantidade de municípios.
