@@ -24,6 +24,7 @@ select idvendedor as "Código do Vendedor",
 	order by sum(valor) desc;
     
 -- 4. A quantidade de municípios.
+select count(*) as "Quantidade de Municípios" from municipio;
 
 -- 5. A quantidade de municípios que são do Paraná ou de Santa Catarina.
 
